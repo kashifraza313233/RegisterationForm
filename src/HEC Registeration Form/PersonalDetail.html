@@ -9,26 +9,16 @@
 </head>
 <body>
     <div class="container-fluid">
-        <form>
+        <form style="align-items: center;">
             <tr style="margin-top: 15px;">
                 <h6>Tell us about Yourself!</h6>
             </tr>
             <div class="row">
-                <div class="col-xxl-6">
-                    <tr>
-                        <div id="display_image">
-                            <img id="profile_pic" src="img/logo.png">
-                        </div>
-                        <input type="file" id="image_input" name="img" accept="image/png, image/jpg">
-                        <br><br>
-                        <button id="upload_but">UPLOAD</button>
-                        <button id="delete_but">DELETE</button>
-                    </tr>
-                </div>
+                
                 <div class="col-xxl-6">
                     <tr>
                         <div class="dropdown">
-                            <td><label for="title">Title</label></td>
+                            <td><label for="title">Title<span>*</span></label></td>
                             <td>
                                 <select id="title" name="title" required>
                                     <option value="Dr.">Dr.</option>
@@ -41,7 +31,7 @@
                     </tr>
                     <tr>
                         <div class="textbox_container">
-                            <td><label for="fname">First Name</label></td>
+                            <td><label for="fname">First Name<span>*</span></label></td>
                             <td><input class="textbox" type="text" id="fname" name="firstname" placeholder="First name.." required></td>
                         </div>
                     </tr>
@@ -53,7 +43,7 @@
                     </tr>
                     <tr>
                         <div class="textbox_container">
-                            <td><label for="lname">Last Name</label></td>
+                            <td><label for="lname">Last Name<span>*</span></label></td>
                             <td><input class="textbox" type="text" id="lname" name="lastname" placeholder="Last name.." required></td>
                         </div>
                     </tr>
@@ -66,7 +56,7 @@
                     <tr>
                         <div class="radiobtn">
                             <table id="maritial_status_table">
-                                <td><label for="maritalstatus">Marital Status</label></td>
+                                <td><label for="maritalstatus">Marital Status<span>*</span></label></td>
                                 <td>
                                     <input type="radio" id="single" name="maritialstatus" value="Single">Single<br>
                                     <input type="radio" id="married" name="maritialstatus" value="Married">Married<br>
@@ -78,7 +68,7 @@
                     </tr>
                     <tr>
                         <div class="radiobtn">
-                            <td><label for="gender">Gender</label></td>
+                            <td><label for="gender">Gender<span>*</span></label></td>
                             <td>
                                 <input type="radio" id="female" name="gender" value="Female">Female   
                                 <input type="radio" id="male" name="gender" value="Male">Male 
@@ -87,10 +77,19 @@
                         </div>
                     </tr>
                 </div>
-
-                
+                <div class="image">
+                    <tr>
+                        <div id="display_image">
+                            <img id="profile_pic" src="img/logo.png">
+                        </div>
+                        <input type="file" id="image_input" name="img" accept="image/png, image/jpg">
+                        <br><br>
+                        <button id="upload_but">UPLOAD</button>
+                        <button id="delete_but">DELETE</button>
+                    </tr>
+                </div>
             </div>
-
+            
             <tr>
                 <h6>Biographical Information</h6>
             </tr>
@@ -98,13 +97,13 @@
                 <div class="col-xxl-6">
                     <tr>
                         <div class="dateinput">
-                            <td><label for="birthday">Date of Birth</label></td>
+                            <td><label for="birthday">Date of Birth<span>*</span></label></td>
                             <input type="date" id="birthday" name="birthday" required>
                         </div>                    
                     </tr>
                     <tr>
                         <div class="dropdown">
-                            <td><label for="country">Country of Birth</label></td>
+                            <td><label for="country">Country of Birth<span>*</span></label></td>
                             <td>
                                 <select id="country" name="country" tittle="" required>
                                     <option value="Pakistan">Pakistan</option>
@@ -116,7 +115,7 @@
                     </tr>
                     <tr>
                         <div class="dropdown">
-                            <td><label for="religion">Religion</label></td>
+                            <td><label for="religion">Religion<span>*</span></label></td>
                             <td>
                                 <select id="religion" name="religion" required>
                                     <option value="Islam">Islam</option>
@@ -132,7 +131,7 @@
                 <div class="col-xxl-6">
                     <tr>
                         <div class="dropdown">
-                            <td><label for="province">Domicile Province</label></td>
+                            <td><label for="province">Domicile Province<span>*</span></label></td>
                             <td>
                                 <select id="province" name="province" required>
                                     <option value="Punjab">Punjab</option>
@@ -146,7 +145,7 @@
                     </tr>
                     <tr>
                         <div class="dropdown">
-                            <td><label for="city">Domicile City</label></td>
+                            <td><label for="city">Domicile City<span>*</span></label></td>
                             <td>
                                 <select id="city" name="city" required>
                                     <option value="Mianwali">Mianwali</option>
@@ -160,7 +159,7 @@
                     </tr>
                     <tr>
                         <div class="dropdown">
-                            <td><label for="district">Domicile District</label></td>
+                            <td><label for="district">Domicile District<span>*</span></label></td>
                             <td>
                                 <select id="district" name="district" required>
                                     <option value="Mianwali">Mianwali</option>
@@ -232,7 +231,7 @@
                         <div class="textbox_container">
                             <td><label for="CNIC">CNIC</label></td>
                             <td><input class="textbox" type="text" id="CNIC" name="CNIC" placeholder="XXXXX-XXXXXXX-X" required></td>
-                            <td><label></label></td>
+                            <td><label></label></td><br>
                             <td><label style="font-size: 10px; color: gray; font-weight: normal;">e.g. 1234512345670</label></td>
                         </div>
                     </tr>
