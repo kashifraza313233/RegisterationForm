@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/logo.png">
+    <link rel="shortcut icon" href="img/logo.png">
     <title>Higher Education Commission, Pakistan</title>
     <link rel="stylesheet" type="text/css" href="form.css" />
 </head>
@@ -24,16 +24,284 @@
                 <td>
                     <p id="name">Kashif Raza</p>
                 </td>
-                <td><img class="avatar" src="/img/profile.png" alt="&#128512"></td>
+                <td><img class="avatar" src="img/profile.png" alt="&#128512"></td>
             </tr>
         </table>
         <h5>My Profile</h5>  
-        <div class="subheading">
+        <h2>Registeration Form </h2>
+        <!-- <div class="subheading">
             <button>Personal Details</button>
             <button>Contact</button>
             <button>Education</button>
-        </div>
+        </div> -->
     </div>
+    <form action="">
+        <table align="center">
+
+            <tr>
+
+            <tr>
+                <td>
+                    <h3>Tell us about Yourself!</h3>
+                </td>
+            <tr>
+                <td colspan="10">
+                    <hr>
+                </td>
+            </tr>
+            </tr>
+
+            <td>Title<span>*</span></td>
+            <td>
+                <select id="title" name="title" title="Tittle" required>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Engr.">Engr.</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Ms.">Ms.</option>
+                </select>
+            </td>
+            <td rowspan="5">
+                <img id="profile_pic" src="img/logo.png" alt=""><br><br>
+                <input type="file" id="image_input" name="img" accept="image/png, image/jpg" title="ab"><br><br>
+                <button id="upload_but" type="button">UPLOAD</button>
+                <button id="delete_but" type="button">DELETE</button>
+
+            </td>
+            </tr>
+            <tr>
+                <td>First Name<span>*</span></td>
+                <td>
+                    <input class="textbox" type="text" id="fname" name="firstname" placeholder="First name.." required>
+                </td>
+            </tr>
+            <tr>
+                <td> Middle Name </td>
+                <td>
+                    <input class="textbox" type="text" id="mname" name="middlename" placeholder="Middle name..">
+                </td>
+            </tr>
+            <tr>
+                <td> Last Name<span>*</span></td>
+                <td>
+                    <input class="textbox" type="text" id="lname" name="lastname" placeholder="Last name.." required>
+                </td>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td>
+                    <input class="textbox" type="text" id="fullname" name="fullname" title="fn" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Marital Status<span>*</span></td>
+
+                <td>
+                    <br><br>
+                    <input type="radio" id="single" name="maritialstatus" value="Single" title="ms">
+                    Single <br>
+                    <input type="radio" id="married" name="maritialstatus" value="Married" title="ms">
+                    Married <br>
+                    <input type="radio" id="widowed" name="maritialstatus" value="Widowed" title="ms">
+                    Widowed <br>
+                    <input type="radio" id="divorced" name="maritialstatus" value="Separated/Divorced" title="ms">
+                    Separated/Divorced
+                </td>
+            </tr>
+
+            <tr>
+                <br><br>
+                <td>Gender<span>*</span></td>
+
+                <td>
+                    <br>
+                    <input type="radio" id="female" name="gender" value="Female" title="gender">Female
+                    <input type="radio" id="male" name="gender" value="Male" title="gender">Male
+                    <input type="radio" id="other" name="gender" value="Other" title="gender">Other
+                </td>
+
+            </tr>
+
+            <tr>
+                <tr>
+                    <td>
+                        <h3>Biographical Information</h3>
+                    </td>
+                    <tr>
+                        <td colspan="10">
+                            <hr>
+                        </td>
+                    </tr>       
+                </tr>
+                <td>
+                    Date of Birth<span>*</span>
+                </td>
+                <td>
+                    <input type="date" id="birthday" name="birthday" title="dob" required>                      
+                </td>
+                 <td>
+                    <td colspan="1">
+                        <td>Domicile Province<span>*</span></td>
+                    <td>
+                        <select id="province" name="province" title="dp" required>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Balochistan">Balochistan</option>
+                            <option value="Gilgit-Balitistan">Gilgit-Balitistan</option>
+                            <option value="Khyber Pakhtunkhwa">KPK</option>
+                            <option value="Sindh">Sindh</option>
+                        </select>     
+                    </td>   
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    Country of Birth<span>*</span>
+                </td>
+                <td>
+                    <select id="CountryBirth" name="country" title="cob" required>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Iran">Iran</option>
+                        <option value="India">India</option>
+                    </select> 
+                </td>
+                <td colspan="2">
+                    <td>Domicile City<span>*</span></td>
+                    <td>
+                        <select id="city" name="city" title="dc" required>
+                            <option value="Mianwali">Mianwali</option>
+                            <option value="Islamabad">Islamabad</option>
+                            <option value="Rawalpindi">Rawalpindi</option>
+                            <option value="Lahore">Lahore</option>
+                            <option value="Karachi">Karachi</option>
+                        </select>     
+                    </td>     
+                 </td>
+            </tr>
+            <tr>
+                    <td>Religion<span>*</span></td>
+                    <td>
+                        <select id="religion" name="religion" title="religion" required>
+                            <option value="Islam">Islam</option>
+                            <option value="Chrishtianity">Chrishtianity</option>
+                            <option value="Hinduism">Hinduism</option>
+                            <option value="Ahmadi">Ahmadi</option>
+                            <option value="Other">Other</option>
+                        </select>     
+                    </td> 
+                    <td colspan="2">
+                        <td>Domicile District<span>*</span></td>
+                            <td>
+                                <select id="district" name="district" title="dd" required>
+                                    <option value="Mianwali">Mianwali</option>
+                                    <option value="Islamabad">Islamabad</option>
+                                    <option value="Rawalpindi">Rawalpindi</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Karachi">Karachi</option>
+                                </select>     
+                            </td>    
+                    </td>                  
+            </tr>
+            <tr>
+                <td>
+                    <h3>National ID</h3>
+                    <tr>
+                        <td colspan="10">
+                            <hr>
+                        </td>
+                    </tr>
+                </td>
+                <tr>
+                    <td colspan="10">
+                        <h4>Please Enter your Information</h4>
+                    </td>
+                </tr>
+                <td>
+                    <tr class="head_row">
+                        <th>Country</th>
+                        <th>Type</th>
+                        <th>Identification Number</th>    
+                    </tr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="dropdown">
+                            <select id="country" name="country" title="c">
+                                <option value="Pakistan">Pakistan</option>
+                            </select>     
+                    </div>    
+                </td>
+                <td>
+                    
+                    <div class="dropdown">
+                        <select id="idtype" name="idtype" title="id">
+                            <option value="B-Form">B-Form</option>
+                            <option value="CNIC">CNIC</option>
+                            <option value="NTN">NTN</option>
+                            <option value="Passport">Passport</option>
+                        </select>     
+                    </div>    
+                </td>
+                <td>
+                    <br>
+                    
+                    <input class="textbox" type="text" placeholder="XXXXX-XXXXXXX-X" id="id" name="idnumber" title="idtxt">
+                    <br><br>
+                </td>
+            </tr> 
+            <tr>
+                <td><br><br>
+                   <h3>Permanent Address Details</h3>
+                </td>
+                <tr>
+                    <td colspan="10">
+                        <hr>
+                    </td>
+                </tr>
+                <td>Type</td>
+                <td>Permanent</td>
+                <td colspan="2">
+                    <td>Address <span>*</span></td>
+                    <td>
+                        <input class="textbox" type="text" placeholder="Enter Address" id="ad" name="address" title="add">
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Country <span>*</span></td>
+                <td>
+                    <select id="countryb" name="country" title="cob" required>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Iran">Iran</option>
+                        <option value="India">India</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td>City<span>*</span></td>
+                <td>
+                    <select id="district" name="district" title="dd" required>
+                        <option value="Mianwali">Mianwali</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Karachi">Karachi</option>
+                    </select>     
+                </td>    
+            </tr>
+            <tr>
+                <td>District<span>*</span></td>
+                <td>
+                    <select id="district" name="district" title="dd" required>
+                        <option value="Mianwali">Mianwali</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Karachi">Karachi</option>
+                    </select>     
+                </td>    
+        </tr>
+        </table>
+    </form>
 </body>
 
 </html>
