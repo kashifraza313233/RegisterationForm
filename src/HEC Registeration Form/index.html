@@ -28,7 +28,7 @@
             </tr>
         </table>
         <h5>My Profile</h5>  
-        <h2>Registeration Form </h2>
+        
         <!-- <div class="subheading">
             <button>Personal Details</button>
             <button>Contact</button>
@@ -36,8 +36,8 @@
         </div> -->
     </div>
     <form action="">
-        <table align="center">
-
+        <table id="form">
+            <h2>Registeration Form </h2>
             <tr>
 
             <tr>
@@ -166,7 +166,7 @@
                 <td colspan="2">
                     <td>Domicile City<span>*</span></td>
                     <td>
-                        <select id="city" name="city" title="dc" required>
+                        <select id="Domicilcity" name="city" title="dc" required>
                             <option value="Mianwali">Mianwali</option>
                             <option value="Islamabad">Islamabad</option>
                             <option value="Rawalpindi">Rawalpindi</option>
@@ -190,7 +190,7 @@
                     <td colspan="2">
                         <td>Domicile District<span>*</span></td>
                             <td>
-                                <select id="district" name="district" title="dd" required>
+                                <select id="domiciledistrict" name="district" title="dd" required>
                                     <option value="Mianwali">Mianwali</option>
                                     <option value="Islamabad">Islamabad</option>
                                     <option value="Rawalpindi">Rawalpindi</option>
@@ -275,11 +275,17 @@
                         <option value="India">India</option>
                     </select> 
                 </td>
+                <td colspan="2">
+                    <td>Postal Code</td>
+                    <td>
+                        <input class="textbox" type="text" id="pc" name="code" title="postal">
+                    </td>
+                </td>
             </tr>
             <tr>
                 <td>City<span>*</span></td>
                 <td>
-                    <select id="district" name="district" title="dd" required>
+                    <select id="city" name="cty" title="c" required>
                         <option value="Mianwali">Mianwali</option>
                         <option value="Islamabad">Islamabad</option>
                         <option value="Rawalpindi">Rawalpindi</option>
@@ -299,8 +305,70 @@
                         <option value="Karachi">Karachi</option>
                     </select>     
                 </td>    
-        </tr>
+             </tr>
+             <tr>
+                <td><br><br>
+                   <h3>Current Address Details</h3>
+                </td>
+                <tr>
+                    <td colspan="10">
+                        <hr>
+                    </td>
+                </tr>
+                <td>Type</td>
+                <td>Current</td>
+                <td colspan="2">
+                    <td>Address <span>*</span></td>
+                    <td>
+                        <input class="textbox" type="text" placeholder="Enter Address" id="ad" name="address" title="add">
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>Country <span>*</span></td>
+                <td>
+                    <select id="countryb" name="country" title="cob" required>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Iran">Iran</option>
+                        <option value="India">India</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td>City<span>*</span></td>
+                <td>
+                    <select id="city1" name="ct" title="cty" required>
+                        <option value="Mianwali">Mianwali</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Karachi">Karachi</option>
+                    </select>     
+                </td>    
+            </tr>
+            <tr>
+                <td>District<span>*</span></td>
+                <td>
+                    <select id="district1" name="cdistrict" title="cd" required>
+                        <option value="Mianwali">Mianwali</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Karachi">Karachi</option>
+                    </select>     
+                </td>    
+             </tr>
+             
+             <tr>
+              
+                <td colspan="10">
+                    <br><br>
+                    <br>
+                    <input type="button" value="Save">
+                </td>
+             </tr>
         </table>
+        
     </form>
 </body>
 

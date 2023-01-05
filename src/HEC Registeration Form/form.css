@@ -85,6 +85,95 @@ h2{
 span{
   color: red;
 }
+input[type="button"]
+{
+  width: 150px;
+  height: 50px;
+  background-color: rgb(42, 100, 150);
+  color: antiquewhite;
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 table{
 
   width: 100%;
