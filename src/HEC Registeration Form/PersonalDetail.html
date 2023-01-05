@@ -106,7 +106,6 @@
                             <hr>
                         </td>
                     </tr>       
-                </td>
                 </tr>
                 <td>
                     Date of Birth<span>*</span>
@@ -133,7 +132,7 @@
                     Country of Birth<span>*</span>
                 </td>
                 <td>
-                    <select id="country" name="country" title="cob" required>
+                    <select id="countryb" name="country" title="cob" required>
                         <option value="Pakistan">Pakistan</option>
                         <option value="Iran">Iran</option>
                         <option value="India">India</option>
@@ -174,8 +173,63 @@
                                     <option value="Karachi">Karachi</option>
                                 </select>     
                             </td>    
+                    </td>                  
+            </tr>
+            <tr>
+                <td>
+                    <h3>National ID</h3>
+                    <tr>
+                        <td colspan="10">
+                            <hr>
+                        </td>
+                    </tr>
+                </td>
+                <tr>
+                    <td colspan="10">
+                        <h4>Please Enter your Information</h4>
                     </td>
-                                    
+                </tr>
+                <td>
+                    <tr class="head_row">
+                        <th>Country</th>
+                        <th>Type</th>
+                        <th>Identification Number</th>    
+                    </tr>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="dropdown">
+                            <select id="country" name="country" title="c">
+                                <option value="Pakistan">Pakistan</option>
+                            </select>     
+                    </div>    
+                </td>
+                <td>
+                    
+                    <div class="dropdown">
+                        <select id="idtype" name="idtype" title="id">
+                            <option value="B-Form">B-Form</option>
+                            <option value="CNIC">CNIC</option>
+                            <option value="NTN">NTN</option>
+                            <option value="Passport">Passport</option>
+                        </select>     
+                    </div>    
+                </td>
+                <td>
+                    <br>
+                    
+                    <input class="textbox" type="text" placeholder="XXXXX-XXXXXXX-X" id="id" name="idnumber" title="idtxt">
+                    <br><br>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                    <br><br>
+                </td>
             </tr>
         </table>
 
